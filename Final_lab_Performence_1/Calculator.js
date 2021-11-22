@@ -19,6 +19,10 @@ buttons.map( button => {
                 if (display.innerText){
                    display.innerText = display.innerText.slice(0, -1);
                 }
+            case 'CE':
+                    if (display.innerText){
+                       display.innerText = display.innerText.slice(0, -1);
+                    }
                 break;
             default:
                 display.innerText += e.target.innerText;
