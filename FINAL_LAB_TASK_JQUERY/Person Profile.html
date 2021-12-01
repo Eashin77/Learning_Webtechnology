@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="jquery-3.6.0.js"></script>
+	<title>Person Profile</title>
+</head>
+<body>
+	<div id="error"></div>	
+	<form id="form"  method="POST">
+        <table width="100%">
+            <tr height="400px">
+            <td style=" padding:100px ">
+		<fieldset>
+			<legend><b><h2 id="1"> PERSON PROFILE</h2></b></legend>
+				Name:<br>
+				<input type="text" id="name" name="name" value=""><br>
+                Email:<br>
+				<input type="email" id="email" name="email" value=""><br>
+				Gender:<br><hr>
+				<input type="radio" id="gender" name="gender" value="Male"> Male
+				<input type="radio" id="gender" name="gender" value="Female"> Female<br><hr>
+				Date of Birth:<br><hr>
+                <input size="2" type="text" name="date"> /
+                <input size="2" type="text" name="month"> /
+                <input size="4" type="text" name="year"> (date/month/year)<br><hr>
+				Blood Group:<br><hr>
+				<select name="BloodGroup" id="bloodgroup">
+					<option value="">A+</option>
+					<option value="">A-</option>
+					<option value="">B+</option>
+					<option value="">B-</option>
+					<option value="">O+</option>
+					<option value="">O-</option>
+					<option value="">AB+</option>
+					<option value="">AB-</option>
+				</select><br><hr>
+				Degree:<br><hr>
+			<input type="checkbox" id="checkbox" name="degree"> SSC
+            <input type="checkbox" id="checkbox" name="degree"> HSC
+            <input type="checkbox" id="checkbox" name="degree"> BSc. 
+			<input type="checkbox" id="checkbox" name="degree"> MSc. <br><hr> 
+			    Phone Number:<br><hr>
+			<input type="number" id="number" name="number" value=""><br><hr>  
+			Photo:<br><hr>
+			<Picture><input type="file" name="file" id="file"><br><hr>
+				<div align="right">
+			<input type="submit" id="submit" name="submit" value="Submit">
+			<input type="reset" name="reset" value="Reset">
+				</div>
+				<script type="text/javascript" src="personProfile.js"></script>			
+		</fieldset></td></tr></table>
+	</form>
+</body>
+</html>
